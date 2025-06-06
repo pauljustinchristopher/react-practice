@@ -1,9 +1,12 @@
-import userList from "./userList";
+import Product from "./component/Product";
+import Person from "./Person";
+
 
 const App = () => {
   return (
     <div>
-      <userList />
+      <Person name="Paul" age={19} />
+      <Product name="Paulis" price={1234}/>
     </div>
   ); 
   
