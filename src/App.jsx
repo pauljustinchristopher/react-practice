@@ -4,28 +4,29 @@ const App = () => {
     {
       userName: "Paul",
       email: "test@gmail.com",
-      location: "USA"
+      location: "USA",
     },
     {
       userName: "John",
       email: "jd@gmail.com",
-      location: "Arab"
+      location: "Arab",
+    },
+    {
+      userName: "Justin",
+      email: "thy f@gmail.com",
+      location: "Niger",
     }
-  ]
+  ];
 
   return ( 
   <main>
-
-    {numbers.map((numbers) => (
-
-      <ul key={number}>
-
-        <li>{number}</li>
-
+    { usersInfo.map(({ userName, email, location}) => (
+      <ul key={Math.random()}>
+        <li>{userName}</li>
+        <li>{email}</li>
+        <li>{location}</li>
       </ul>
-
     ))}
-
   </main>
 
   );
