@@ -1,19 +1,31 @@
-const validPassword = () => <h1>Valid Password</h1>;
+// const ValidPassword = () => <h1>Valid Password</h1>;
 
-const invalidPassword = () => <h1>Invalid Password</h1>;
+// const InvalidPassword = () => <h1>Invalid Password</h1>;
 
-const passWord = ({ isValid }) => {
-  if(isValid) {
-    return <validPassword />;
-  }
+// const PassWord = ({ isValid }) => isValid? <ValidPassword /> : <InvalidPassword />
 
-  return <invalidPassword />;
+
+// const App = () => {
+//   return (
+//     <section>
+//     <PassWord isValid = {true} />
+//     </section>
+//   );
+// }; 
+
+
+const Cart = () => {
+  const items = ["Wireless Earbuds", "Power Bank", "New SSD", "Hoddie"];
+
+  return <div>
+    <h1>Cart 🛒</h1>
+    {items.length > 0 && <h2>You have {items.length} items in your Cart</h2> }
+  </div>
 }
 
 const App = () => {
-  return (
-    <section>
-    <passWord isValid = {true} />
-    </section>
-  );
-}; 
+  return <Cart />
+}
+
+
+export default App;
