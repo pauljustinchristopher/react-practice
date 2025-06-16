@@ -1,7 +1,11 @@
 // const ValidPassword = () => <h1>Valid Password</h1>;
 
-import Greet from "./component/Greet";
+import Footer from "./component/Footer";
 import Header from "./component/Header";
+import Main from "./component/Main"; 
+import Person from "./component/Person";
+import WelcomeMessage from "./component/WelcomeMessage";
+import Password from "./component/Password";
 
 // const InvalidPassword = () => <h1>Invalid Password</h1>;
 
@@ -29,8 +33,13 @@ import Header from "./component/Header";
 const App = () => {
   return(
   <>
+    <WelcomeMessage /> 
     <Header />
-    <Greet />
+    <Main />
+    <Footer />
+    <Password isValid={true} />
+    {/* <Person name="Paul" age={21} /> */}
+    
   </>
 )}
 
